@@ -8,8 +8,13 @@ public class PersonTest{
   public void before() {
     person = new Person("Daniel", 666);
   }
-
   @Test
   public void hasName(){
     assertEquals("Daniel", person.getName());
   }
+
+  @Test
+  public void hasAge(){
+    assertEquals(666, person.getAge());
+  }
+}
