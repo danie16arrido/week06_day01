@@ -7,7 +7,7 @@ public class ClassroomTest{
 
   @Before
   public void before() {
-    classroom1 = new Classroom(12, "High Street", 'a');
+    classroom1 = new Classroom(12, 'a');
     student1 = new Person("Daniel", 666);
   }
 
@@ -16,10 +16,6 @@ public class ClassroomTest{
     assertEquals(12, classroom1.getRoomNumber());
   }
 
-  @Test
-  public void hasBuilding(){
-    assertEquals("High Street", classroom1.getBuilding());
-  }
   @Test
   public void hasType(){
     assertEquals('a', classroom1.getType());

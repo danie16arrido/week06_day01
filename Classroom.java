@@ -1,15 +1,11 @@
 public class Classroom{
   private int roomNumber;
-  private String building;
   private char type;
   private boolean empty;
   private Person[] studentsList;
 
-
-
-  public Classroom(int roomNumber, String building, char type){
+  public Classroom(int roomNumber, char type){
     this.roomNumber = roomNumber;
-    this.building = building;
     this.type = type;
     this.empty = true;
     this.studentsList = new Person[6];
@@ -17,10 +13,6 @@ public class Classroom{
 
   public int getRoomNumber(){
     return this.roomNumber;
-  }
-
-  public String getBuilding(){
-    return this.building;
   }
 
   public char getType(){
